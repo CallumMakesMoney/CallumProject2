@@ -3,13 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Callum Project 2</title>
+    <title>Interactive Website</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script> <!-- Use 'defer' to load JS after HTML -->
 </head>
 <body>
-    <h1>Welcome to Callum Project 2</h1>
-    <p>This is a simple project deployed using GitHub Pages.</p>
-    <button onclick="displayMessage()">Click Me</button>
-    <script src="script.js"></script>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Section -->
+    <section id="home">
+        <h1>Welcome to the Interactive Website</h1>
+        <p>This website demonstrates HTML, CSS, and JavaScript interactivity.</p>
+        <button id="showAlert">Click Me</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We create amazing interactive web experiences.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Enter your message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="formFeedback" class="hidden">Thank you for your message!</p>
+    </section>
 </body>
 </html>
